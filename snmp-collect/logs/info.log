@@ -1,0 +1,64 @@
+2018-01-29 19:14:17.548 INFO  1294 [main] org.springframework.boot.StartupInfoLogger - Starting AlarmCollectorApplication on USER-20160515VC with PID 7872 (started by Administrator in D:\工作\ah-alarm\fm-snmp)
+2018-01-29 19:14:17.553 INFO  1299 [main] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+2018-01-29 19:14:17.631 INFO  1377 [main] org.springframework.context.support.AbstractApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@757277dc: startup date [Mon Jan 29 19:14:17 CST 2018]; root of context hierarchy
+2018-01-29 19:14:18.005 INFO  1751 [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-01-29 19:14:19.237 INFO  2983 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$3a4fbda1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-29 19:14:19.689 INFO  3435 [main] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-01-29 19:14:19.705 INFO  3451 [main] org.apache.juli.logging.DirectJDKLog - Starting service Tomcat
+2018-01-29 19:14:19.706 INFO  3452 [main] org.apache.juli.logging.DirectJDKLog - Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-01-29 19:14:19.923 INFO  3669 [localhost-startStop-1] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+2018-01-29 19:14:19.923 INFO  3669 [localhost-startStop-1] org.springframework.boot.context.embedded.EmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 2296 ms
+2018-01-29 19:14:20.178 INFO  3924 [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-29 19:14:20.184 INFO  3930 [localhost-startStop-1] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-29 19:14:20.184 INFO  3930 [localhost-startStop-1] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-29 19:14:20.185 INFO  3931 [localhost-startStop-1] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-29 19:14:20.185 INFO  3931 [localhost-startStop-1] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-29 19:14:20.346 INFO  4092 [main] com.ffcs.oss.fm.filter.RegexAlarmFilter - 从配置文件读取到过滤模式为：[sS]*?ARGS=3s+[sS]*
+2018-01-29 19:14:20.376 INFO  4122 [main] com.ffcs.oss.fm.session.source.SnmpAlarmSourceSession - 加载TRAP监听地址:udp:172.17.42.10/5200
+2018-01-29 19:14:21.087 INFO  4833 [main] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry - Mapped "{[/alarm/notify],methods=[POST]}" onto public void com.ffcs.oss.fm.controller.AlarmController.notify(java.lang.String)
+2018-01-29 19:14:21.090 INFO  4836 [main] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-01-29 19:14:21.095 INFO  4841 [main] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-01-29 19:14:21.096 INFO  4842 [main] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-01-29 19:14:21.098 INFO  4844 [main] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-01-29 19:14:21.101 INFO  4847 [main] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-29 19:14:21.103 INFO  4849 [main] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-29 19:14:21.358 INFO  5104 [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@757277dc: startup date [Mon Jan 29 19:14:17 CST 2018]; root of context hierarchy
+2018-01-29 19:14:21.502 INFO  5248 [main] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-29 19:14:21.503 INFO  5249 [main] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-29 19:14:21.552 INFO  5298 [main] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-29 19:14:21.916 INFO  5662 [main] org.springframework.jmx.export.MBeanExporter - Registering beans for JMX exposure on startup
+2018-01-29 19:14:21.926 INFO  5672 [main] org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup - Starting beans in phase 2147483647
+2018-01-29 19:14:21.926 INFO  5672 [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2018-01-29 19:14:21.951 INFO  5697 [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-01-29 19:14:21.998 INFO  5744 [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2018-01-29 19:14:22.034 INFO  5780 [main] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+2018-01-29 19:14:22.070 INFO  5816 [main] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+2018-01-29 19:14:22.202 INFO  5948 [main] org.apache.juli.logging.DirectJDKLog - Using a shared selector for servlet write/read
+2018-01-29 19:14:22.223 INFO  5969 [main] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2018-01-29 19:14:22.228 INFO  5974 [main] com.ffcs.oss.fm.controller.AlarmController - 告警任务采集启动
+2018-01-29 19:14:22.234 INFO  5980 [main] com.ffcs.oss.fm.session.source.SnmpAlarmSourceSession - udp:172.17.42.10/5200
+2018-01-29 19:14:22.268 ERROR 6014 [main] com.ffcs.oss.fm.controller.AlarmController - 告警采集任务执行出错
+java.net.BindException: Cannot assign requested address: Cannot bind
+	at java.net.DualStackPlainDatagramSocketImpl.socketBind(Native Method) ~[?:1.8.0_101]
+	at java.net.DualStackPlainDatagramSocketImpl.bind0(DualStackPlainDatagramSocketImpl.java:84) ~[?:1.8.0_101]
+	at java.net.AbstractPlainDatagramSocketImpl.bind(AbstractPlainDatagramSocketImpl.java:93) ~[?:1.8.0_101]
+	at java.net.DatagramSocket.bind(DatagramSocket.java:392) ~[?:1.8.0_101]
+	at java.net.DatagramSocket.<init>(DatagramSocket.java:242) ~[?:1.8.0_101]
+	at java.net.DatagramSocket.<init>(DatagramSocket.java:299) ~[?:1.8.0_101]
+	at org.snmp4j.transport.DefaultUdpTransportMapping.<init>(DefaultUdpTransportMapping.java:101) ~[snmp4j-2.5.6.jar:?]
+	at com.ffcs.oss.fm.session.source.SnmpAlarmSourceSession.ready(SnmpAlarmSourceSession.java:93) ~[classes/:?]
+	at com.ffcs.oss.fm.controller.AlarmController.lambda$0(AlarmController.java:46) ~[classes/:?]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:776) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:760) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:747) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at com.ffcs.oss.fm.AlarmCollectorApplication.main(AlarmCollectorApplication.java:31) [classes/:?]
+2018-01-29 19:14:22.273 INFO  6019 [main] com.ffcs.oss.fm.controller.AlarmController - 告警任务采终止
+2018-01-29 19:14:22.299 INFO  6045 [main] org.springframework.boot.StartupInfoLogger - Started AlarmCollectorApplication in 5.21 seconds (JVM running for 6.133)
+2018-01-29 19:50:08.501 INFO  2152247 [RMI TCP Connection(2)-172.16.249.138] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-01-29 19:50:08.502 INFO  2152248 [RMI TCP Connection(2)-172.16.249.138] org.springframework.context.support.AbstractApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@757277dc: startup date [Mon Jan 29 19:14:17 CST 2018]; root of context hierarchy
+2018-01-29 19:50:08.558 INFO  2152304 [RMI TCP Connection(2)-172.16.249.138] org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup - Stopping beans in phase 2147483647
+2018-01-29 19:50:08.559 INFO  2152305 [RMI TCP Connection(2)-172.16.249.138] org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup - Stopping beans in phase 0
+2018-01-29 19:50:08.561 INFO  2152307 [RMI TCP Connection(2)-172.16.249.138] org.springframework.jmx.export.MBeanExporter - Unregistering JMX-exposed beans on shutdown
