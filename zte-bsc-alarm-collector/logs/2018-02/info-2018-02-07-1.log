@@ -1,0 +1,306 @@
+2018-02-07 14:42:49.045 INFO  3844 [main] org.springframework.boot.StartupInfoLogger - Starting AlarmCollectorApplicationTests on USER-20160515VC with PID 8832 (started by Administrator in D:\工作\zte-bsc-alarm-collector)
+2018-02-07 14:42:49.424 INFO  4223 [main] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+2018-02-07 14:42:50.038 INFO  4837 [main] org.springframework.context.support.AbstractApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2bdd8394: startup date [Wed Feb 07 14:42:50 CST 2018]; root of context hierarchy
+2018-02-07 14:42:51.509 INFO  6308 [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final
+2018-02-07 14:42:55.160 INFO  9959 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$880d02f5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-07 14:42:55.222 INFO  10021 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$fd6d2790] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-07 14:42:55.256 INFO  10055 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$f1e0ec34] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-07 14:42:55.288 INFO  10087 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-07 14:42:55.303 INFO  10102 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-07 14:42:55.307 INFO  10106 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.cache.EhCacheCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.EhCacheCacheConfiguration$$EnhancerBySpringCGLIB$$8c7fb932] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-07 14:42:56.027 INFO  10826 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'ehCacheCacheManager' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-07 14:42:56.033 INFO  10832 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheManager' of type [org.springframework.cache.ehcache.EhCacheCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-07 14:42:56.035 INFO  10834 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-07 14:42:57.898 INFO  12697 [main] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry - Mapped "{[/alarm/notify],methods=[POST]}" onto public void com.ffcs.oss.cap.alarm.controller.AlarmController.notify(java.lang.String)
+2018-02-07 14:42:57.900 INFO  12699 [main] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-02-07 14:42:57.905 INFO  12704 [main] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-02-07 14:42:57.906 INFO  12705 [main] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-02-07 14:42:57.908 INFO  12707 [main] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-02-07 14:42:57.913 INFO  12712 [main] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-07 14:42:57.914 INFO  12713 [main] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-07 14:42:58.725 INFO  13524 [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@2bdd8394: startup date [Wed Feb 07 14:42:50 CST 2018]; root of context hierarchy
+2018-02-07 14:42:58.874 INFO  13673 [main] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-07 14:42:58.875 INFO  13674 [main] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-07 14:42:58.955 INFO  13754 [main] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-07 14:42:59.527 INFO  14326 [main] org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup - Starting beans in phase 2147483647
+2018-02-07 14:42:59.528 INFO  14327 [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2018-02-07 14:42:59.581 INFO  14380 [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-02-07 14:42:59.611 INFO  14410 [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2018-02-07 14:42:59.871 INFO  14670 [main] com.ffcs.oss.cap.alarm.controller.AlarmController - 告警任务采集启动
+2018-02-07 14:42:59.871 ERROR 14670 [main] com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession - 释放notificationIRP出错，该异常可不关注！
+2018-02-07 14:42:59.883 ERROR 14682 [main] com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession - 释放epirp出错，该异常可不关注！
+2018-02-07 14:42:59.883 ERROR 14682 [main] com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession - 释放orb出错，该异常可不关注！
+2018-02-07 14:42:59.884 INFO  14683 [main] com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession - 初始化ORB
+2018-02-07 14:43:01.120 WARN  15919 [main] org.jacorb.config.JacORBConfiguration - jacorb.home unset! Will use '.'
+2018-02-07 14:43:01.121 WARN  15920 [main] org.jacorb.config.JacORBConfiguration - File .\jacorb.properties for configuration jacorb not found
+2018-02-07 14:43:01.153 INFO  15952 [main] org.jacorb.orb.ORB - 
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JacORB V 2.3.1, www.jacorb.org
+	(C) The JacORB project 27-May-2009
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2018-02-07 14:43:01.471 INFO  16270 [main] org.jacorb.orb.ORB - Property "jacorb.hashtable_class" is set to: java.util.HashMap
+2018-02-07 14:43:01.482 INFO  16281 [main] org.jacorb.orb.portableInterceptor.InterceptorManager - InterceptorManager started with 1 Server Interceptors, 1 Client Interceptors and 0 IOR Interceptors
+2018-02-07 14:43:01.483 INFO  16282 [main] com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession - orb初始化成功
+2018-02-07 14:43:01.703 WARN  16502 [main] org.jacorb.orb.iiop.IIOPListener$Acceptor - could not create server socket port: 22234 host: /134.130.17.24
+java.net.BindException: Cannot assign requested address: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method) ~[?:1.8.0_101]
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106) ~[?:1.8.0_101]
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387) ~[?:1.8.0_101]
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190) ~[?:1.8.0_101]
+	at java.net.ServerSocket.bind(ServerSocket.java:375) ~[?:1.8.0_101]
+	at java.net.ServerSocket.<init>(ServerSocket.java:237) ~[?:1.8.0_101]
+	at org.jacorb.orb.factory.DefaultServerSocketFactory.createServerSocket(DefaultServerSocketFactory.java:49) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.iiop.IIOPListener$Acceptor.createServerSocket(IIOPListener.java:572) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.iiop.IIOPListener$Acceptor.init(IIOPListener.java:417) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.iiop.IIOPListener.configure(IIOPListener.java:163) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.etf.FactoriesBase.newInstance(FactoriesBase.java:125) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.etf.FactoriesBase.create_listener(FactoriesBase.java:74) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.BasicAdapter.configure(BasicAdapter.java:102) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.ORB.getRootPOA(ORB.java:988) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.ORB.resolve_initial_references(ORB.java:1259) ~[jacorb-2.3.1.jar:?]
+	at com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession.login(Corba3GPPAlarmSourceSession.java:98) ~[classes/:?]
+	at com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession.ready(Corba3GPPAlarmSourceSession.java:64) ~[classes/:?]
+	at com.ffcs.oss.cap.alarm.controller.AlarmController.lambda$startCollectAlarm$0(AlarmController.java:49) ~[classes/:?]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:776) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:760) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:747) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) [spring-boot-test-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+2018-02-07 14:43:01.723 ERROR 16522 [main] com.ffcs.oss.cap.alarm.controller.AlarmController - 告警采集任务执行出错
+org.omg.CORBA.INITIALIZE: Could not create server socket (22234): java.net.BindException: Cannot assign requested address: JVM_Bind
+	at org.jacorb.orb.iiop.IIOPListener$Acceptor.createServerSocket(IIOPListener.java:580) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.iiop.IIOPListener$Acceptor.init(IIOPListener.java:417) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.iiop.IIOPListener.configure(IIOPListener.java:163) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.etf.FactoriesBase.newInstance(FactoriesBase.java:125) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.etf.FactoriesBase.create_listener(FactoriesBase.java:74) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.BasicAdapter.configure(BasicAdapter.java:102) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.ORB.getRootPOA(ORB.java:988) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.ORB.resolve_initial_references(ORB.java:1259) ~[jacorb-2.3.1.jar:?]
+	at com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession.login(Corba3GPPAlarmSourceSession.java:98) ~[classes/:?]
+	at com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession.ready(Corba3GPPAlarmSourceSession.java:64) ~[classes/:?]
+	at com.ffcs.oss.cap.alarm.controller.AlarmController.lambda$startCollectAlarm$0(AlarmController.java:49) ~[classes/:?]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:776) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:760) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:747) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) [spring-boot-test-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+2018-02-07 14:43:01.724 INFO  16523 [main] com.ffcs.oss.cap.alarm.controller.AlarmController - 告警任务采终止
+2018-02-07 14:43:01.726 INFO  16525 [main] org.springframework.boot.StartupInfoLogger - Started AlarmCollectorApplicationTests in 14.498 seconds (JVM running for 16.577)
+2018-02-07 14:43:01.970 INFO  16769 [main] com.ffcs.oss.cap.alarm.AlarmCollectorApplicationTests - ----------
+2018-02-07 14:43:01.982 ERROR 16781 [Thread-4] com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession - 释放notificationIRP出错，该异常可不关注！
+2018-02-07 14:43:01.983 ERROR 16782 [Thread-4] com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession - 释放epirp出错，该异常可不关注！
+2018-02-07 14:43:01.983 INFO  16782 [Thread-5] org.springframework.context.support.AbstractApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@2bdd8394: startup date [Wed Feb 07 14:42:50 CST 2018]; root of context hierarchy
+2018-02-07 14:43:01.983 INFO  16782 [Thread-4] org.jacorb.orb.ORB - prepare ORB for shutdown...
+2018-02-07 14:43:01.983 INFO  16782 [Thread-4] org.jacorb.orb.ORB - ORB going down...
+2018-02-07 14:43:01.986 INFO  16785 [Thread-5] org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup - Stopping beans in phase 2147483647
+2018-02-07 14:43:02.021 INFO  16820 [POADestructor] org.jacorb.poa.POA - POA RootPOA destroyed
+2018-02-07 14:43:02.023 INFO  16822 [Thread-4] org.jacorb.orb.ORB - ORB shutdown complete
+2018-02-07 14:43:02.024 INFO  16823 [Thread-4] com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession - shutdown orb success!!
+2018-02-07 15:15:33.339 INFO  1466 [main] org.springframework.boot.StartupInfoLogger - Starting AlarmCollectorApplicationTests on USER-20160515VC with PID 1576 (started by Administrator in D:\工作\zte-bsc-alarm-collector)
+2018-02-07 15:15:33.362 INFO  1489 [main] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+2018-02-07 15:15:33.415 INFO  1542 [main] org.springframework.context.support.AbstractApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2bdd8394: startup date [Wed Feb 07 15:15:33 CST 2018]; root of context hierarchy
+2018-02-07 15:15:33.829 INFO  1956 [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final
+2018-02-07 15:15:35.306 INFO  3433 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$1b3891ec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-07 15:15:35.353 INFO  3480 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$9098b687] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-07 15:15:35.384 INFO  3511 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$850c7b2b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-07 15:15:35.424 INFO  3551 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-07 15:15:35.439 INFO  3566 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-07 15:15:35.446 INFO  3573 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.cache.EhCacheCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.EhCacheCacheConfiguration$$EnhancerBySpringCGLIB$$1fab4829] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-07 15:15:36.006 INFO  4133 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'ehCacheCacheManager' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-07 15:15:36.016 INFO  4143 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheManager' of type [org.springframework.cache.ehcache.EhCacheCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-07 15:15:36.018 INFO  4145 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-07 15:15:37.115 INFO  5242 [main] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry - Mapped "{[/alarm/notify],methods=[POST]}" onto public void com.ffcs.oss.cap.alarm.controller.AlarmController.notify(java.lang.String)
+2018-02-07 15:15:37.117 INFO  5244 [main] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-02-07 15:15:37.121 INFO  5248 [main] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-02-07 15:15:37.123 INFO  5250 [main] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-02-07 15:15:37.124 INFO  5251 [main] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-02-07 15:15:37.129 INFO  5256 [main] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-07 15:15:37.132 INFO  5259 [main] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-07 15:15:37.586 INFO  5713 [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@2bdd8394: startup date [Wed Feb 07 15:15:33 CST 2018]; root of context hierarchy
+2018-02-07 15:15:37.681 INFO  5808 [main] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-07 15:15:37.681 INFO  5808 [main] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-07 15:15:37.753 INFO  5880 [main] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-07 15:15:38.189 INFO  6316 [main] org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup - Starting beans in phase 2147483647
+2018-02-07 15:15:38.190 INFO  6317 [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2018-02-07 15:15:38.211 INFO  6338 [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-02-07 15:15:38.236 INFO  6363 [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2018-02-07 15:15:38.362 INFO  6489 [main] com.ffcs.oss.cap.alarm.controller.AlarmController - 告警任务采集启动
+2018-02-07 15:15:38.362 ERROR 6489 [main] com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession - 释放notificationIRP出错，该异常可不关注！
+2018-02-07 15:15:38.410 ERROR 6537 [main] com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession - 释放epirp出错，该异常可不关注！
+2018-02-07 15:15:38.411 ERROR 6538 [main] com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession - 释放orb出错，该异常可不关注！
+2018-02-07 15:15:38.412 INFO  6539 [main] com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession - 初始化ORB
+2018-02-07 15:15:38.431 WARN  6558 [main] org.jacorb.config.JacORBConfiguration - jacorb.home unset! Will use '.'
+2018-02-07 15:15:38.432 WARN  6559 [main] org.jacorb.config.JacORBConfiguration - File .\jacorb.properties for configuration jacorb not found
+2018-02-07 15:15:38.436 INFO  6563 [main] org.jacorb.orb.ORB - 
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JacORB V 2.3.1, www.jacorb.org
+	(C) The JacORB project 27-May-2009
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2018-02-07 15:15:38.466 INFO  6593 [main] org.jacorb.orb.ORB - Property "jacorb.hashtable_class" is set to: java.util.HashMap
+2018-02-07 15:15:38.475 INFO  6602 [main] org.jacorb.orb.portableInterceptor.InterceptorManager - InterceptorManager started with 1 Server Interceptors, 1 Client Interceptors and 0 IOR Interceptors
+2018-02-07 15:15:38.476 INFO  6603 [main] com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession - orb初始化成功
+2018-02-07 15:15:38.524 WARN  6651 [main] org.jacorb.orb.iiop.IIOPListener$Acceptor - could not create server socket port: 22234 host: /134.130.17.24
+java.net.BindException: Cannot assign requested address: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method) ~[?:1.8.0_101]
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106) ~[?:1.8.0_101]
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387) ~[?:1.8.0_101]
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190) ~[?:1.8.0_101]
+	at java.net.ServerSocket.bind(ServerSocket.java:375) ~[?:1.8.0_101]
+	at java.net.ServerSocket.<init>(ServerSocket.java:237) ~[?:1.8.0_101]
+	at org.jacorb.orb.factory.DefaultServerSocketFactory.createServerSocket(DefaultServerSocketFactory.java:49) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.iiop.IIOPListener$Acceptor.createServerSocket(IIOPListener.java:572) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.iiop.IIOPListener$Acceptor.init(IIOPListener.java:417) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.iiop.IIOPListener.configure(IIOPListener.java:163) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.etf.FactoriesBase.newInstance(FactoriesBase.java:125) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.etf.FactoriesBase.create_listener(FactoriesBase.java:74) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.BasicAdapter.configure(BasicAdapter.java:102) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.ORB.getRootPOA(ORB.java:988) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.ORB.resolve_initial_references(ORB.java:1259) ~[jacorb-2.3.1.jar:?]
+	at com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession.login(Corba3GPPAlarmSourceSession.java:98) ~[classes/:?]
+	at com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession.ready(Corba3GPPAlarmSourceSession.java:64) ~[classes/:?]
+	at com.ffcs.oss.cap.alarm.controller.AlarmController.lambda$startCollectAlarm$0(AlarmController.java:49) ~[classes/:?]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:776) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:760) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:747) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) [spring-boot-test-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+2018-02-07 15:15:38.531 ERROR 6658 [main] com.ffcs.oss.cap.alarm.controller.AlarmController - 告警采集任务执行出错
+org.omg.CORBA.INITIALIZE: Could not create server socket (22234): java.net.BindException: Cannot assign requested address: JVM_Bind
+	at org.jacorb.orb.iiop.IIOPListener$Acceptor.createServerSocket(IIOPListener.java:580) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.iiop.IIOPListener$Acceptor.init(IIOPListener.java:417) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.iiop.IIOPListener.configure(IIOPListener.java:163) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.etf.FactoriesBase.newInstance(FactoriesBase.java:125) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.etf.FactoriesBase.create_listener(FactoriesBase.java:74) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.BasicAdapter.configure(BasicAdapter.java:102) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.ORB.getRootPOA(ORB.java:988) ~[jacorb-2.3.1.jar:?]
+	at org.jacorb.orb.ORB.resolve_initial_references(ORB.java:1259) ~[jacorb-2.3.1.jar:?]
+	at com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession.login(Corba3GPPAlarmSourceSession.java:98) ~[classes/:?]
+	at com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession.ready(Corba3GPPAlarmSourceSession.java:64) ~[classes/:?]
+	at com.ffcs.oss.cap.alarm.controller.AlarmController.lambda$startCollectAlarm$0(AlarmController.java:49) ~[classes/:?]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:776) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:760) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:747) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) [spring-boot-test-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+2018-02-07 15:15:38.533 INFO  6660 [main] com.ffcs.oss.cap.alarm.controller.AlarmController - 告警任务采终止
+2018-02-07 15:15:38.535 INFO  6662 [main] org.springframework.boot.StartupInfoLogger - Started AlarmCollectorApplicationTests in 5.602 seconds (JVM running for 6.741)
+2018-02-07 15:15:38.607 INFO  6734 [main] com.ffcs.oss.cap.alarm.AlarmCollectorApplicationTests - ----------
+2018-02-07 15:15:38.621 INFO  6748 [Thread-5] org.springframework.context.support.AbstractApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@2bdd8394: startup date [Wed Feb 07 15:15:33 CST 2018]; root of context hierarchy
+2018-02-07 15:15:38.624 INFO  6751 [Thread-5] org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup - Stopping beans in phase 2147483647
+2018-02-07 15:15:38.626 INFO  6753 [Thread-5] org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup - Stopping beans in phase 0
+2018-02-07 15:15:38.637 ERROR 6764 [Thread-4] com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession - 释放notificationIRP出错，该异常可不关注！
+2018-02-07 15:15:38.638 ERROR 6765 [Thread-4] com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession - 释放epirp出错，该异常可不关注！
+2018-02-07 15:15:38.638 INFO  6765 [Thread-4] org.jacorb.orb.ORB - prepare ORB for shutdown...
+2018-02-07 15:15:38.638 INFO  6765 [Thread-4] org.jacorb.orb.ORB - ORB going down...
