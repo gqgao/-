@@ -251,6 +251,7 @@ public class KafkaAlarmProcessor implements AlarmProcessor {
 				alarm.put("PERCEIVEDSEVERITY", alarmData.get("PERCEIVEDSEVERITY"));
 				alarm.put("CREATIONTIMESTAMP", alarmData.get("CREATIONTIMESTAMP"));
 				alarm.put("EVENTTIME", alarmData.get("EVENTTIME"));
+				alarm.put("ADDITIONALTEXT", alarmData.get("ADDITIONALTEXT"));
 
 				LOGGER.info("从缓存删除故障通知【Id=" + vendorAlarmId + "】");
 				cache.evict(vendorAlarmId);

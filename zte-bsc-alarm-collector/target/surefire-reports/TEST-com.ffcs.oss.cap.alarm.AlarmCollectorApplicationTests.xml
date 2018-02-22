@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.ffcs.oss.cap.alarm.AlarmCollectorApplicationTests" time="0.21" tests="1" errors="0" skipped="0" failures="0">
+<testsuite name="com.ffcs.oss.cap.alarm.AlarmCollectorApplicationTests" time="0.795" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="D:\jdk1.8.0_101\jre\bin"/>
     <property name="java.vm.version" value="25.101-b13"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="D:\工作\zte-bsc-alarm-collector"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\git\zte-bsc-alarm-collector"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="Service Pack 1"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="D:\工作\zte-bsc-alarm-collector"/>
+    <property name="user.dir" value="D:\git\zte-bsc-alarm-collector"/>
     <property name="java.runtime.version" value="1.8.0_101-b13"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="D:\jdk1.8.0_101\jre\lib\endorsed"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="D:\work\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8716240436621543181.tmp"/>
+    <property name="classworlds.conf" value="D:\work\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5488515895538276691.tmp"/>
     <property name="sun.jnu.encoding" value="GBK"/>
     <property name="java.library.path" value="D:\jdk1.8.0_101\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:/jdk1.8.0_101/bin/../jre/bin/server;D:/jdk1.8.0_101/bin/../jre/bin;D:/jdk1.8.0_101/bin/../jre/lib/amd64;C:C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;;D:\jdk1.8.0_101\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;C:\Windows\system32;D:\apache-maven-3.5.2\bin;C:\Users\Administrator.USER-20160515VC\Desktop\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,5 +60,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="contextLoads" classname="com.ffcs.oss.cap.alarm.AlarmCollectorApplicationTests" time="0.21"/>
+  <testcase name="contextLoads" classname="com.ffcs.oss.cap.alarm.AlarmCollectorApplicationTests" time="0.795"/>
 </testsuite>

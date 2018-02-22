@@ -1,7 +1,7 @@
-2018-02-22 15:30:57.785 ERROR 18321 [main] com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession - 释放notificationIRP出错，该异常可不关注！
-2018-02-22 15:30:57.816 ERROR 18352 [main] com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession - 释放epirp出错，该异常可不关注！
-2018-02-22 15:30:57.817 ERROR 18353 [main] com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession - 释放orb出错，该异常可不关注！
-2018-02-22 15:30:59.304 ERROR 19840 [main] com.ffcs.oss.cap.alarm.controller.AlarmController - 告警采集任务执行出错
+2018-02-12 16:11:46.419 ERROR 16044 [main] com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession - 释放notificationIRP出错，该异常可不关注！
+2018-02-12 16:11:46.487 ERROR 16112 [main] com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession - 释放epirp出错，该异常可不关注！
+2018-02-12 16:11:46.487 ERROR 16112 [main] com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession - 释放orb出错，该异常可不关注！
+2018-02-12 16:11:47.475 ERROR 17100 [main] com.ffcs.oss.cap.alarm.controller.AlarmController - 告警采集任务执行出错
 org.omg.CORBA.INITIALIZE: Could not create server socket (22234): java.net.BindException: Cannot assign requested address: JVM_Bind
 	at org.jacorb.orb.iiop.IIOPListener$Acceptor.createServerSocket(IIOPListener.java:580) ~[jacorb-2.3.1.jar:?]
 	at org.jacorb.orb.iiop.IIOPListener$Acceptor.init(IIOPListener.java:417) ~[jacorb-2.3.1.jar:?]
@@ -13,7 +13,7 @@ org.omg.CORBA.INITIALIZE: Could not create server socket (22234): java.net.BindE
 	at org.jacorb.orb.ORB.resolve_initial_references(ORB.java:1259) ~[jacorb-2.3.1.jar:?]
 	at com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession.login(Corba3GPPAlarmSourceSession.java:98) ~[classes/:?]
 	at com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession.ready(Corba3GPPAlarmSourceSession.java:64) ~[classes/:?]
-	at com.ffcs.oss.cap.alarm.controller.AlarmController.lambda$startCollectAlarm$0(AlarmController.java:49) ~[classes/:?]
+	at com.ffcs.oss.cap.alarm.controller.AlarmController.lambda$0(AlarmController.java:49) ~[classes/:?]
 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:776) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
 	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:760) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
 	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:747) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
@@ -47,5 +47,4 @@ org.omg.CORBA.INITIALIZE: Could not create server socket (22234): java.net.BindE
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
-2018-02-22 15:31:00.424 ERROR 20960 [Thread-4] com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession - 释放notificationIRP出错，该异常可不关注！
-2018-02-22 15:31:00.426 ERROR 20962 [Thread-4] com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession - 释放epirp出错，该异常可不关注！
+2018-02-12 16:11:47.757 ERROR 17382 [Thread-4] com.ffcs.oss.cap.alarm.fm.session.source.Corba3GPPAlarmSourceSession - 释放notificationIRP出错，该异常可不关注！
