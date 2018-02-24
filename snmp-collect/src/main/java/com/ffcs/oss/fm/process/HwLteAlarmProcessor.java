@@ -33,9 +33,9 @@ import com.ffcs.oss.fm.util.FormatUtil;
 import lombok.Data;
 import net.sf.json.JSONObject;
 
-@Service
+/*@Service
 @Data
-@ConfigurationProperties(prefix = "hwlte.alarm")
+@ConfigurationProperties(prefix = "hwlte.alarm")*/
 public class HwLteAlarmProcessor implements AlarmProcessor {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(HwLteAlarmProcessor.class);

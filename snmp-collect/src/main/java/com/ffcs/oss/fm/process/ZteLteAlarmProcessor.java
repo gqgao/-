@@ -32,7 +32,7 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/*@Service*/
+@Service
 public class ZteLteAlarmProcessor implements AlarmProcessor {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(ZteLteAlarmProcessor.class);
@@ -243,6 +243,13 @@ public class ZteLteAlarmProcessor implements AlarmProcessor {
 		}
 		return "";
 	}
+	
+	/*public static void main(String[] args) {
+		String str = "AQ-市区-大枫固网机房ZFBBU03(800M)-161808(161808)";
+		String str1 = "XY-GC-石台-石台局ZFBBU02-448226(448226)";
+		String result = extractRegion(str1);
+		System.out.println(result);
+	}*/
 
 	private String extractRegion(String content) {
 		if (content == null || "".equals(content)) {

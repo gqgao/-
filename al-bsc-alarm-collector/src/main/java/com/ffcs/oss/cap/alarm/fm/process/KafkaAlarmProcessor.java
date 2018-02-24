@@ -1,7 +1,9 @@
 package com.ffcs.oss.cap.alarm.fm.process;
 
 import com.ffcs.oss.cap.alarm.fm.AlarmParams;
+
 import net.sf.json.JSONObject;
+
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,6 +13,7 @@ import org.springframework.cache.CacheManager;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -66,6 +69,8 @@ public class KafkaAlarmProcessor implements AlarmProcessor {
 			Iterator<String> it = jsonObject.keys();
 			String managerObjectClass = "";
 			String type = "";
+			String mod1btsTxAmp = "";
+			String sector = "";
 			while (it.hasNext()) {
 				String key = it.next().trim();
 				String value = ("" + jsonObject.get(key)).trim();
@@ -77,14 +82,16 @@ public class KafkaAlarmProcessor implements AlarmProcessor {
 						alarmData.put("VENDOR_ALARMID", getRegexValue(value, "Alarm=([ \\d]+)"));
 						alarmData.put("BTSID", getRegexValue(value, "Mod1bts=([ \\d]+)"));
 						break;
+					case "nn":
+						alarmData.put("ALARMTITLE", value);
+						break;
+					case "i":
+						mod1btsTxAmp = getRegexValue(value, "Mod1btsTxAmp=([\\d]+)");
+						break;
 					case "e":
 						privateFieldMap.put("MANAGED_OBJECT_INSTANCE", value);
 						alarmData.put("EQUIPMENTNAME", value);
-						String sector = getRegexValue(value, "Sector=([ \\d]+)");
-						if (sector.length() > 1) {
-							alarmData.put("BTSID", sector.substring(0, sector.length() - 1));
-							alarmData.put("CELLID", sector.substring(sector.length() - 1, sector.length()));
-						}
+						sector = getRegexValue(value, "Sector=([ \\d]+)");
 						break;
 					case "h":
 						alarmData.put("PERCEIVEDSEVERITY", convertAlarmSeverity(value));
@@ -93,9 +100,6 @@ public class KafkaAlarmProcessor implements AlarmProcessor {
 						if (!"".equals(value)) {
 							alarmData.put("ALARMTYPE", Integer.parseInt(value.substring(1, 2)));
 						}
-						break;
-					case "nn":
-						alarmData.put("ALARMTITLE", value);
 						break;
 					case "c":
 						privateFieldMap.put("SYSTEM_DN", value);
@@ -109,6 +113,18 @@ public class KafkaAlarmProcessor implements AlarmProcessor {
 				}
 			}
 
+			String alarmTitle = (String) alarmData.get("ALARMTITLE");
+			if (mod1btsTxAmp.length() > 0) {
+				if (("Mod1btsTxAmp_txAmplifierLossOfCommunication,Mod1btsTxAmp_txAmpIndeterminate,Mod1btsTxAmp_txAmplifierCircuit".contains(alarmTitle + ""))){
+					alarmData.put("CELLID", convertAlarmCellid(mod1btsTxAmp));
+				}
+			}
+			
+			if (sector.length() > 1) {
+				alarmData.put("BTSID", sector.substring(0, sector.length() - 1));
+				alarmData.put("CELLID", sector.substring(sector.length() - 1, sector.length()));
+			}
+			
 			if ("5".equals(alarmData.get("PERCEIVEDSEVERITY")) && "".equals(alarmData.get("CLEARANCETIMESTAMP"))) {
 				alarmData.put("CLEARANCETIMESTAMP", alarmData.get("EVENTTIME"));
 			}
@@ -145,6 +161,31 @@ public class KafkaAlarmProcessor implements AlarmProcessor {
 				return "4";
 			case "6":
 				return "5";
+			default:
+				return "0";
+		}
+	}
+	
+	/**
+	 *  扇区id转换
+	 *  注：该方法不通用
+	 * @param srcAlarmCellid
+	 * @return
+	 */
+	private String convertAlarmCellid(String srcAlarmCellid) {
+		switch (srcAlarmCellid) {
+			case "1":
+				return "1";
+			case "2":
+				return "1";
+			case "4":
+				return "2";
+			case "5":
+				return "2";
+			case "7":
+				return "3";
+			case "8":
+				return "3";
 			default:
 				return "0";
 		}
